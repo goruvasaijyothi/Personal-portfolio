@@ -1,0 +1,361 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#111827;
+    padding:18px 10%;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links li a:hover{
+    color:#38bdf8;
+}
+
+/* ===========================
+   HOME SECTION
+=========================== */
+
+.home{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 10%;
+    gap:50px;
+}
+
+.content{
+    flex:1;
+}
+
+.content h3{
+    font-size:28px;
+}
+
+.content h1{
+    font-size:60px;
+    margin:10px 0;
+    color:#38bdf8;
+}
+
+.content p{
+    margin:20px 0;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.image{
+    flex:1;
+    text-align:center;
+}
+
+.image img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    border:6px solid #38bdf8;
+    object-fit:cover;
+    box-shadow:0 0 30px #38bdf8;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 28px;
+    background:#38bdf8;
+    color:#111827;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
+
+.social-icons{
+    margin-top:20px;
+}
+
+.social-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:45px;
+    height:45px;
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+    border-radius:50%;
+    margin-right:12px;
+    text-decoration:none;
+    transition:.3s;
+    font-size:20px;
+}
+
+.social-icons a:hover{
+    background:#38bdf8;
+    color:#111827;
+}
+
+/* ===========================
+   COMMON SECTION
+=========================== */
+
+section{
+    padding:90px 10%;
+}
+
+.heading{
+    text-align:center;
+    font-size:42px;
+    color:#38bdf8;
+    margin-bottom:50px;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about-container{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.about-container img{
+    width:280px;
+    border-radius:15px;
+}
+
+.about-container p{
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    font-size:20px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.skill-card:hover{
+    background:#38bdf8;
+    color:#111827;
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    margin:20px;
+    color:#38bdf8;
+}
+
+.project-card p{
+    margin:0 20px 20px;
+    line-height:1.7;
+}
+
+/* ===========================
+   EDUCATION
+=========================== */
+
+.education-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.education-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    background:#1e293b;
+    color:white;
+    font-size:16px;
+}
+
+form button{
+    border:none;
+    cursor:pointer;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    font-size:16px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .about-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .image img{
+        width:260px;
+        height:260px;
+    }
+
+    .content h1{
+        font-size:42px;
+    }
+
+    .content h3{
+        font-size:24px;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-links li{
+        margin:10px;
+    }
+}
